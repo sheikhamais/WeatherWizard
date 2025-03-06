@@ -1,0 +1,204 @@
+/* Basic Reset */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Typography */
+html {
+    font-size: 100%;
+    border: none;
+    background-color: transparent;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: lightgray;
+}
+
+.container {
+    background-color: rgb(231, 231, 231);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 60px;
+    margin: 40px 60px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-area-container {
+    background-color: white;
+    flex: 1; /* Adjust flex to 1 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+}
+
+.search-bar-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background-color: rgb(248, 248, 248);
+    height: 40px;
+    border-radius: 12px;
+    width: 100%;
+}
+
+.search-bar-container input {
+    border: none;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    outline: none; 
+}
+
+.search-bar-container svg {
+    width: 24px;
+    height: 24px;
+}
+
+#search-place-search-button {
+    border: none;
+    background: none;
+    margin-left: 12px;
+}
+
+#search-place-find-location-button {
+    border: none;
+    background: none;
+    margin-right: 12px;
+    background-color: rgb(232, 232, 232);
+    border-radius: 12px;
+    width: 24px;
+    height: 24px;
+}
+
+#current-weather-icon-image {
+    width: 100%;
+    margin: 12px 0;
+}
+
+.current-weather-temperature-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0px;
+    width: 100%;
+    padding: 0 24px;
+}
+
+.current-weather-temperature-value {
+    font-size: 80px;
+    line-height: 1;
+}
+
+.current-weather-temperature-unit {
+    line-height: 1;
+    margin-top: 12px;
+}
+
+.current-weather-day-time-container {
+    width: 100%;
+    padding: 4px 24px;
+    font-size: 12px;
+}
+
+.current-weather-day-time-value span {
+    color: #c1c1c1;
+}
+
+.current-weather-center-horizontal-divider {
+    width: 100%;
+    padding: 18px 24px;
+}
+
+.current-weather-center-horizontal-divider div {
+    background-color: #eeeeee;
+    width: 100%;
+    height: 1px;
+}
+
+.current-weather-type-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    gap: 12px;
+    padding: 4px 24px;
+}
+
+.current-weather-type-container img {
+    width: 24px;
+    height: 24px;
+}
+
+.current-weather-type-value {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.current-weather-rain-chance-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    gap: 12px;
+    padding: 4px 24px;
+}
+
+.current-weather-rain-chance-container img {
+    width: 16px;
+    height: 16px;
+}
+
+.current-weather-rain-chance-value {
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 8px;
+}
+
+.current-weather-place-container {
+    width: 100%;
+    height: 100px;
+    margin: 44px 0;
+    padding: 0 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.current-weather-place-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.current-weather-place-name {
+    position: absolute;
+    font-size: 18px;
+    color: white;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 1);
+    opacity: 0.8;
+}
+
+
+.right-area-container {
+    flex: 3.5; /* Adjust flex to 3.5 */
+}

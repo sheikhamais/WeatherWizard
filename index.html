@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Weather Wizard</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="left-area-container">
+
+            <div class="search-bar-container">
+                <button id="search-place-search-button">
+                    <svg viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <circle cx="14" cy="14" fill="none" id="XMLID_42_" r="9" stroke="#000000" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" />
+                        <line fill="none" id="XMLID_44_" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-miterlimit="10" stroke-width="2" x1="27" x2="20.366" y1="27" y2="20.366" />
+                    </svg>
+                </button>
+                <input type="text" id="search-place-input" placeholder="Search for places.." />
+                <button id="search-place-find-location-button">
+                    <svg viewBox="-6.4 -6.4 76.80 76.80" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#000000"
+                        stroke-width="4">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0" />
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+                        <g id="SVGRepo_iconCarrier">
+                            <circle cx="32" cy="32" r="24" />
+                            <line x1="32" y1="8" x2="32" y2="16" />
+                            <line x1="32" y1="48" x2="32" y2="56" />
+                            <line x1="56" y1="32" x2="48" y2="32" />
+                            <line x1="8" y1="32" x2="16" y2="32" />
+                        </g>
+                    </svg>
+                </button>
+            </div>
+
+            <img src="assets/images/placeholder.png" id="current-weather-icon-image" alt="Weather Icon" />
+
+            <div class="current-weather-temperature-container">
+                <h1 class="current-weather-temperature-value">0</h1>    
+                <h2 class="current-weather-temperature-unit">℃</h2>
+            </div>
+
+            <div class="current-weather-day-time-container">
+                <h2 class="current-weather-day-time-value">Monday, <span>12:00</span></h2>
+            </div>
+
+            <div class="current-weather-center-horizontal-divider"><div></div></div>
+
+            <div class="current-weather-type-container">
+                <img src="assets/icons/cloud-svgrepo-com.svg" alt="Weather Icon" />
+                <h2 class="current-weather-type-value">Mostly Cloudy</h2>
+            </div>
+
+            <div class="current-weather-rain-chance-container">
+                <img src="assets/icons/rain-svgrepo-com.svg" alt="Weather Icon" />
+                <h2 class="current-weather-rain-chance-value">Rain - <span>30%</span></h2>
+            </div>
+
+            <div class="current-weather-place-container">
+                <img src="assets/images/placeholder.png" id="current-weather-place-image" alt="Place" />
+                <h2 class="current-weather-place-name">City, Country</h2>
+            </div>
+
+        </div>
+
+        <div class="right-area-container">
+        </div>
+
+    </div>
+</body>
+
+</html>
