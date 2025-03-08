@@ -35,7 +35,7 @@ body {
 
 .left-area-container {
     background-color: white;
-    flex: 1; /* Adjust flex to 1 */
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -200,7 +200,7 @@ body {
 
 /* Right Area */
 .right-area-container {
-    flex: 3.5; /* Adjust flex to 3.5 */
+    flex: 3.5;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -210,13 +210,11 @@ body {
 }
 
 .top-action-bar {
-    background-color: orange;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 8px 24px;
 }
 
 .temperature-units-and-profile-picture-container {
@@ -225,7 +223,68 @@ body {
     justify-content: center;
     align-items: center;
     gap: 12px;
+    padding: 8px 24px;
 }
+
+.time-selection-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 24px;
+}
+
+.time-selection-option-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #c1c1c1;
+}
+
+.active-time-selection-option {
+    color: #333;
+    border-bottom: 2px solid #333;
+}
+
+.temperature-units-selection-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.temperature-unit-name {
+    font-size: 16px;
+    font-weight: 600;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    align-content: center;
+    border-radius: 18px;
+    background-color: white;
+    border: 1px solid #333;
+}
+
+.active-temperature-unit {
+    background-color: #333;
+    color: white;
+}
+
+.profile-picture-container {
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    background-color: #333;
+    margin: 0 12px;
+}
+
+.profile-picture-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
 
 .time-based-weather-condition-tiles-container {
     display: grid;
