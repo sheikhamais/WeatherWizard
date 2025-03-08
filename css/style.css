@@ -25,7 +25,7 @@ body {
     background-color: rgb(231, 231, 231);
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
     border-radius: 60px;
     margin: 40px 60px;
@@ -198,7 +198,74 @@ body {
     opacity: 0.8;
 }
 
-
+/* Right Area */
 .right-area-container {
     flex: 3.5; /* Adjust flex to 3.5 */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: aquamarine;
+    padding: 24px;
+}
+
+.top-action-bar {
+    background-color: orange;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 8px 24px;
+}
+
+.temperature-units-and-profile-picture-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.time-based-weather-condition-tiles-container {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 16px;
+    width: 100%;
+    padding: 46px 24px;
+    background-color: aqua;
+}
+
+.time-based-weather-condition-tiles-container div {
+    height: 160px;
+    background-color: peru;
+}
+
+.today-highlights-container {
+    background-color: antiquewhite;
+    width: 100%;
+    font-size: small;
+}
+
+.today-highlights-title {
+    padding: 8px 24px;
+}
+
+.today-highlights-items-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 12px;
+    background-color: paleturquoise;
+    padding: 24px;
+}
+
+.highlights-item {
+    background-color: lightcoral;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 24px;
+    height: 140px;
 }
