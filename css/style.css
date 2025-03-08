@@ -277,6 +277,7 @@ body {
     border-radius: 6px;
     background-color: #333;
     margin: 0 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .profile-picture-container img {
@@ -285,21 +286,49 @@ body {
     object-fit: fill;
 }
 
-
+/* Weather Condition Tiles */
 .time-based-weather-condition-tiles-container {
     display: grid;
     grid-auto-flow: column;
     gap: 16px;
     width: 100%;
     padding: 46px 24px;
-    background-color: aqua;
 }
 
-.time-based-weather-condition-tiles-container div {
-    height: 160px;
-    background-color: peru;
+.weather-tile {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.weather-tile-time-heading {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 0;
+}
+
+#weather-tile-image {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.weather-tile-temperature {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 0;
+}
+
+.weather-tile-temperature span {
+    color: #c1c1c1;
+}
+
+/* Today Highlights */
 .today-highlights-container {
     background-color: antiquewhite;
     width: 100%;
