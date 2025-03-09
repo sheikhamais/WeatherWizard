@@ -410,6 +410,51 @@ body {
     background-color: rgb(59, 59, 211);
 }
 
+/* Sunrise Sunset */
+
+.highlights-sunset-sunrise-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 12px;
+    padding: 16px 0;
+}
+
+.sunrise-block, .sunset-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+}
+
+.sunrise-icon, .sunset-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sun-icon {
+    width: 52px;
+    height: 52px;
+}
+
+.up-icon, .down-icon {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+}
+
+.sunrise-sunset-time-value {
+    font-size: 18px;
+    font-weight: 500;
+}
+
 /* Highlights Footer */
 .highlights-item-content-footer-block {
     width: 100%;
