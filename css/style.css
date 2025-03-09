@@ -367,7 +367,6 @@ body {
 
 /* Highlights Content */
 .highlights-item-content-block {
-    /* background-color: palevioletred; */
     width: 100%;
 }
 
@@ -423,7 +422,8 @@ body {
     padding: 16px 0;
 }
 
-.sunrise-block, .sunset-block {
+.sunrise-block,
+.sunset-block {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -432,7 +432,8 @@ body {
     width: 100%;
 }
 
-.sunrise-icon, .sunset-icon {
+.sunrise-icon,
+.sunset-icon {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -444,7 +445,8 @@ body {
     height: 52px;
 }
 
-.up-icon, .down-icon {
+.up-icon,
+.down-icon {
     width: 16px;
     height: 16px;
     position: absolute;
@@ -474,4 +476,84 @@ body {
     font-size: 16px;
     font-weight: 500;
     padding: 6px 0;
+}
+
+/* UV Index */
+
+.uv-index-content-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Container setup: 200px wide and 100px tall */
+.arc-container {
+    width: 200px;
+    height: 100px;
+}
+
+/* SVG fills the container */
+.arc-svg {
+    width: 100%;
+    height: 100%;
+}
+
+/* Both paths share these properties */
+.arc-background {
+    fill: none;
+    stroke-width: 5;
+}
+
+.arc-progress {
+    fill: none;
+    stroke-width: 10;
+}
+
+.arc-background {
+    stroke: #ccc;
+}
+
+/* The progress arc uses dash techniques to reveal only a portion */
+.arc-progress {
+    stroke: rgb(255, 156, 62);
+    /* Change to your desired color */
+    /* The full length of a semicircle is π * diameter; for dynamic radius use π * 2 * r */
+    stroke-dasharray: 314.16;
+    /* If --progress is 1 then offset becomes 0, if 0.5 then offset ≈157.08, etc. */
+    stroke-dashoffset: calc(314.16 * (1 - var(--progress, 1)));
+    transition: stroke-dashoffset 0.3s ease;
+}
+
+.arc-container.p-100 {
+    --progress: 1;
+}
+
+.arc-container.p-75 {
+    --progress: 0.75;
+}
+
+.arc-container.p-50 {
+    --progress: 0.5;
+}
+
+.arc-container.p-25 {
+    --progress: 0.25;
+}
+
+.arc-container.p-0 {
+    --progress: 0;
+}
+
+.uv-index-value {
+    font-size: 52px;
+    font-weight: 500;
+    line-height: 1;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
 }
